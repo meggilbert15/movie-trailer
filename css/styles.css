@@ -5,6 +5,91 @@
   * Outline Elements
 */
 
-/* * {
+* {
     outline: 1px dotted black;
-} */
+}
+
+/* Parent */
+main {
+  /*   background: thistle; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+
+  /* Cast */
+  .cast {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  @media only screen 
+    and (min-width: 0) 
+    and (max-width: 48em)  { 
+      
+      /* Diagnostic Styling. Delete When Done. */
+      body:before {
+           background: yellow;
+           content: "Mobile Size";
+      }
+      
+      .cast {
+        text-align: center;
+        justify-content: center;
+      }
+    
+  }
+  
+  /* Tablet:  
+    * 768px = 48em 
+      1023px = 63.9375em;
+  */
+  @media only screen 
+    and (min-width: 48em) 
+    and (max-width: 64em)  {
+      
+    /* Diagnostic Styling. Delete When Done. */
+    body:before {
+         background: yellow;
+         content: "Tablet Size";
+    } 
+       .cast {
+        text-align: center;
+        justify-content: center;
+      }
+      
+  }
+  
+  /* Desktop: 
+    * 1024px = 64em
+    * 64em and larger
+  */
+  @media screen 
+    and (min-width: 64em) 
+    and (max-width: 90em) { 
+    
+    /* Diagnostic Styling. Delete When Done. */
+    body:before {
+         background: yellow;
+         content: "Desktop Size";
+    }
+  
+  }
+  
+  /* Wide Desktop: 
+    * 1440px = 90em
+    * 90em and wider
+  */
+  @media screen and (min-width: 90em) { 
+    
+    /* Diagnostic Styling. Delete When Done. */
+    body:before {
+         background: yellow;
+         content: "Wide Desktop Size";
+    }
+  
+  }
+  
+  
