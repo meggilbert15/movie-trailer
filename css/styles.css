@@ -9,6 +9,7 @@
     outline: 1px dotted black;
 }
 
+
 /* Parent */
 main {
   /*   background: thistle; */
@@ -19,13 +20,41 @@ main {
   
 
   /* Cast */
-  .cast {
+.cast {
     display: flex;
     flex-wrap: wrap;
   }
+
+/* Progress Bar */
+.plyr--full-ui input[type="range"] {
+  color: #e19218;
+}
+
+.plyr__time {
+  font-size: 12px;
+}
+
+/* Circle Button */
+.plyr__control {
+  border-radius: 50%
+}
+
+/* Reg Button */
+.plyr__control{
+  color: #cab36a;
+  background: #b54c3d;
+}   
+
+
+
+/* HOVER */
+.plyr__controls__item.plyr__control:hover {
+  background: #cab36a;
+  color: #b54c3d
+}
   
   
-  @media only screen 
+@media only screen 
     and (min-width: 0) 
     and (max-width: 48em)  { 
       
@@ -46,7 +75,7 @@ main {
     * 768px = 48em 
       1023px = 63.9375em;
   */
-  @media only screen 
+@media only screen 
     and (min-width: 48em) 
     and (max-width: 64em)  {
       
@@ -66,7 +95,7 @@ main {
     * 1024px = 64em
     * 64em and larger
   */
-  @media screen 
+@media screen 
     and (min-width: 64em) 
     and (max-width: 90em) { 
     
@@ -82,7 +111,7 @@ main {
     * 1440px = 90em
     * 90em and wider
   */
-  @media screen and (min-width: 90em) { 
+@media screen and (min-width: 90em) { 
     
     /* Diagnostic Styling. Delete When Done. */
     body:before {
