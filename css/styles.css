@@ -25,6 +25,7 @@ main {
     flex-wrap: wrap;
   }
 
+
 /* Progress Bar */
 .plyr--full-ui input[type="range"] {
   color: #e19218;
@@ -52,8 +53,13 @@ main {
   background: #cab36a;
   color: #b54c3d
 }
-  
-  
+
+.fran {
+  width: 48%;
+}
+
+
+
 @media only screen 
     and (min-width: 0) 
     and (max-width: 48em)  { 
