@@ -12,18 +12,51 @@
 
 /* Parent */
 main {
-  /*   background: thistle; */
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+/*   background: thistle; */
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+  font-family: 'Questrial', sans-serif;
+}
   
-
+h1 {
+  font-size: 6em;
+}
   /* Cast */
 .cast {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+figure {
+  width: 250px;
+  overflow: hidden;
+  height: 260px;
+  transition: height 1s;
+}
+
+figure:hover {
+  height: 450px;
+}
+
+figure img {
+  max-width: 100%;
+  justify-content: center;
+}
+
+figure li {
+  text-align: left;
+  padding-bottom: 10px;
+  margin-left: -15px;
+}
+
+h1, h2 {  
+  font-family: 'Unica One', cursive;
+}
 
 
 /* Progress Bar */
@@ -48,14 +81,11 @@ main {
 
 
 
+
 /* HOVER */
 .plyr__controls__item.plyr__control:hover {
   background: #cab36a;
   color: #b54c3d
-}
-
-.fran {
-  width: 48%;
 }
 
 
