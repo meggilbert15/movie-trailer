@@ -198,6 +198,7 @@ aside li{
   color: green;
 }
 
+
 .plyr__video-embed iframe {
 	top: -50%;
 	height: 200%;
@@ -243,10 +244,16 @@ aside li{
     and (min-width: 0) 
     and (max-width: 48em)  { 
 
-      body{
-        display: flex;
+    
+      .info,.cast {
+        display: block;
+        align-content: center;
+        justify-content: space-around;
       }
       
+      .cast {
+        margin-left: -30px;
+      }
       /* Diagnostic Styling. Delete When Done. */
       /* body:before {
            background: yellow;
@@ -255,9 +262,16 @@ aside li{
       header b {
           display: none;
       }
+      blockquote {
+        display: block;
+        max-width: 70%;
+        
+      }
+      .bq-title {
+        font-size: 1.4em;
+      }
       figure:focus {
         height: 577px;
-       
       }
       
       figure:focus h3 {
@@ -297,10 +311,14 @@ aside li{
     and (max-width: 64em)  {
       
     /* Diagnostic Styling. Delete When Done. */
-    body:before {
+    /* body:before {
          background: yellow;
          content: "Tablet Size";
-    } 
+    }  */
+
+    body {
+      align-content: center;
+    }
 
     header b {
       display: none;
@@ -351,10 +369,10 @@ aside li{
     and (max-width: 90em) { 
     
     /* Diagnostic Styling. Delete When Done. */
-    body:before {
+    /* body:before {
          background: yellow;
          content: "Desktop Size";
-    }
+    } */
   
   }
   
@@ -365,11 +383,11 @@ aside li{
 @media screen and (min-width: 90em) { 
     
     /* Diagnostic Styling. Delete When Done. */
-    body:before {
+    /* body:before {
          background: yellow;
          content: "Wide Desktop Size";
     }
   
-  }
+  } */
   
   
