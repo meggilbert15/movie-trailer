@@ -1,9 +1,3 @@
-/* My Awesome Styles */
-
-/* Diagnostic Styling 
-  * Change Background Color
-  * Outline Elements
-*/
 
 /* * {
     outline: 1px dotted black;
@@ -11,7 +5,7 @@
 
 
 /* Parent */
-main {
+#content {
 /*   background: thistle; */
   margin: 0 auto;
   display: grid;
@@ -21,24 +15,48 @@ main {
   letter-spacing: 1px;
   background: black;
   color: green;  
+  z-index: -1;
 }
-  
-header {
+
+
+header  {
   display: flex;
   font-size: large;
   max-width: 100%;
   justify-content: center;
+  height: 5em;
 }
 
-h1 {
-  align-self: center;
+ h1 {
+  align-content: center;
   font-family: 'Press Start 2P', cursive;
   color: green;
   background: lightgray;
+  box-shadow: inset 0 -0.6em 0.1em -0.35em rgba(0,0,0,0.17);
   border-radius: 4px;
   padding: 20px;
- font-size: 35px;
+  padding-bottom: 10px;
+  font-size: 2em;
+  letter-spacing: 1px;
+  kerning: 2px;
+  height: 50px;
 }
+
+blockquote h2{
+  font-family: 'Press Start 2P', cursive;
+  background-image:  linear-gradient(to right, #f79d00, #64f38c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+blockquote {
+  line-height: 1.2em;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 
 figure h2 {
   font-size: 1.9em;
@@ -63,7 +81,7 @@ h3 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  /* background-image: url(https://us.123rf.com/450wm/radistmorze/radistmorze1802/radistmorze180200122/96209263-vector-background-with-color-noise-glitch-effect-.jpg?ver=6); */
+ 
   
 }
 
@@ -108,11 +126,12 @@ figure:hover h3 {
   display: flex;
 }
 
-figure:hover h2{
+figure:hover h2 {
   background-image:  linear-gradient(to right, #f79d00, #64f38c);
   -webkit-background-clip: text;
   color: transparent;
 }
+
 
 figure:hover li {
   display: list-item;
@@ -123,15 +142,24 @@ figure:hover img{
   filter: none;
 }
 
+.rtlink {
+  color: green;
+}
 
+.plyr__video-embed iframe {
+	top: -50%;
+	height: 200%;
+}
 
-
+.ytp-suggestions{
+  display: none;
+}
 
 
 
 /* Progress Bar */
 .plyr--full-ui input[type="range"] {
-  color: #e19218;
+  color: #3a8f27;
 }
 
 .plyr__time {
@@ -145,18 +173,16 @@ figure:hover img{
 
 /* Reg Button */
 .plyr__control{
-  color: #cab36a;
-  background: #b54c3d;
+  color :#3a8f27;
+  background: lightgray;
 }   
-
-
 
 
 
 /* HOVER */
 .plyr__controls__item.plyr__control:hover {
-  background: #cab36a;
-  color: #b54c3d
+  background: #3a8f27;
+  color: lightgray;
 }
 
 
