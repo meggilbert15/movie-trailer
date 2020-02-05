@@ -42,23 +42,24 @@ header  {
   height: 50px;
 }
 
-blockquote h2{
+.bq-title {
   font-family: 'Press Start 2P', cursive;
-  background-image:  linear-gradient(to right, #f79d00, #64f38c);
+  background:  linear-gradient(to right, #f79d00, #64f38c);
+  border: none;
   -webkit-background-clip: text;
   color: transparent;
+  margin-top: .2em ;
 }
 
 blockquote {
   line-height: 1.2em;
   font-size: 1.5em;
   font-weight: 800;
-  text-transform: uppercase;
   text-align: center;
 }
 
 
-figure h2 {
+ h2 {
   font-size: 1.9em;
   align-items: center;
   padding: 10px;
@@ -196,7 +197,9 @@ figure:hover img{
            background: yellow;
            content: "Mobile Size";
       }
-      
+      header b {
+          display: none;
+      }
       .cast {
         text-align: center;
         justify-content: center;
@@ -217,6 +220,36 @@ figure:hover img{
          background: yellow;
          content: "Tablet Size";
     } 
+
+    header b {
+      display: none;
+  }
+  
+figure:focus {
+  height: 577px;
+ 
+}
+
+figure:focus h3 {
+  display: flex;
+}
+
+figure:focus h2 {
+  background-image:  linear-gradient(to right, #f79d00, #64f38c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+figure:focus li {
+  display: list-item;
+  margin-bottom: 30px;
+}
+
+figure:focus img{
+  filter: none;
+}
+
        .cast {
         text-align: center;
         justify-content: center;
