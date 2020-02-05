@@ -19,7 +19,7 @@
 }
 
 
-header  {
+header,.cs  {
   display: flex;
   font-size: large;
   max-width: 100%;
@@ -27,7 +27,11 @@ header  {
   height: 5em;
 }
 
- h1 {
+.cs {
+  padding-bottom: 3em;
+}
+
+ h1, #cast-title {
   align-content: center;
   font-family: 'Press Start 2P', cursive;
   color: green;
@@ -42,6 +46,7 @@ header  {
   height: 50px;
 }
 
+
 .bq-title {
   font-family: 'Press Start 2P', cursive;
   background:  linear-gradient(to right, #f79d00, #64f38c);
@@ -51,7 +56,7 @@ header  {
   margin-top: .2em ;
 }
 
-blockquote {
+blockquote{
   line-height: 1.2em;
   font-size: 1.5em;
   font-weight: 800;
@@ -63,6 +68,9 @@ blockquote {
   font-size: 1.9em;
   align-items: center;
   padding: 10px;
+ }
+
+.cast h2 {
   border: 7px inset gray;
   font-family: 'Press Start 2P', cursive;
  
@@ -73,6 +81,43 @@ h3 {
   background-image:  linear-gradient(to right, #f79d00, #64f38c);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em;
+  padding-bottom: 7em;
+}
+
+table {
+  border: 2px dashed silver;
+  padding: 5px;
+}
+
+.info-title {
+  font-family: 'Press Start 2P', cursive;
+  background-image:  linear-gradient(to right, #f79d00, #64f38c);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+tr {
+  height: 3em;
+}
+
+td {
+  text-align: center;
+  width: 40%;
+  border-bottom: 2px dashed silver;
+}
+th {
+  width: 30%;
+  font-weight: 800;
+  font-family: 'Press Start 2P', cursive;
+  color: #ede161;
+  border: 2px solid silver;
 }
 
 
@@ -87,8 +132,8 @@ h3 {
 }
 
 figure {
+  margin-top: 3em;
   width: 400px;
-  margin-top: -15px;
   overflow: hidden;
   /* transition: height 1.5s; */
   text-align: center;
@@ -143,6 +188,12 @@ figure:hover img{
   filter: none;
 }
 
+aside li{
+  list-style: none;
+  color: green;
+}
+
+
 .rtlink {
   color: green;
 }
@@ -191,20 +242,50 @@ figure:hover img{
 @media only screen 
     and (min-width: 0) 
     and (max-width: 48em)  { 
+
+      body{
+        display: flex;
+      }
       
       /* Diagnostic Styling. Delete When Done. */
-      body:before {
+      /* body:before {
            background: yellow;
            content: "Mobile Size";
-      }
+      } */
       header b {
           display: none;
+      }
+      figure:focus {
+        height: 577px;
+       
+      }
+      
+      figure:focus h3 {
+        display: flex;
+      }
+      
+      figure:focus h2 {
+        background-image:  linear-gradient(to right, #f79d00, #64f38c);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      
+      
+      figure:focus li {
+        display: list-item;
+        margin-bottom: 30px;
+      }
+      
+      figure:focus img{
+        filter: none;
       }
       .cast {
         text-align: center;
         justify-content: center;
       }
-    
+      aside li{
+        list-style: none;
+      }
   }
   
   /* Tablet:  
@@ -224,37 +305,41 @@ figure:hover img{
     header b {
       display: none;
   }
+    
   
-figure:focus {
-  height: 577px;
- 
-}
+      figure:focus {
+        height: 577px;
+      
+      }
 
-figure:focus h3 {
-  display: flex;
-}
+      figure:focus h3 {
+        display: flex;
+      }
 
-figure:focus h2 {
-  background-image:  linear-gradient(to right, #f79d00, #64f38c);
-  -webkit-background-clip: text;
-  color: transparent;
-}
+      figure:focus h2 {
+        background-image:  linear-gradient(to right, #f79d00, #64f38c);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
 
 
-figure:focus li {
-  display: list-item;
-  margin-bottom: 30px;
-}
+      figure:focus li {
+        display: list-item;
+        margin-bottom: 30px;
+      }
 
-figure:focus img{
-  filter: none;
-}
+      figure:focus img{
+        filter: none;
+      }
 
        .cast {
         text-align: center;
         justify-content: center;
       }
-      
+
+      aside li{
+        list-style: none;
+      }
   }
   
   /* Desktop: 
