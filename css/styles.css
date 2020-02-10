@@ -382,12 +382,4 @@ aside li{
   */
 @media screen and (min-width: 90em) { 
     
-    /* Diagnostic Styling. Delete When Done. */
-    /* body:before {
-         background: yellow;
-         content: "Wide Desktop Size";
-    }
-  
-  } */
-  
-  
+}

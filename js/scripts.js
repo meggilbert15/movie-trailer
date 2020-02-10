@@ -18,6 +18,8 @@ const player = new Plyr('#player', {
         f.style.display = (f.style.display == 'none' ? '' : 'none');
     }, 800);
 }, false); 
+
+
 window.addEventListener("load", function() {
     var f = document.getElementById('cast-title');
     setInterval(function() {
