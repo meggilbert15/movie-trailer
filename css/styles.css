@@ -17,6 +17,12 @@
   color: green;  
 }
 
+
+.form {
+  background: black;
+  justify-content: space-around;
+  align-content: center;
+}
 header {
   margin-bottom: 3em;
 }
@@ -177,7 +183,7 @@ figure h3 {
 
 figure:hover {
   height: 577px;
- transition: 2s;
+ 
 }
 
 figure:hover h3 {
@@ -194,6 +200,7 @@ figure:hover h2 {
 figure:hover li {
   display: list-item;
   margin-bottom: 30px;
+  
 }
 
 figure:hover img{
