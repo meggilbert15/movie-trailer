@@ -13,9 +13,8 @@
   grid-template-columns: 1fr;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 1px;
-  background: black;
+  background-image: url(https://ak7.picdn.net/shutterstock/videos/3663947/thumb/1.jpg);
   color: green;  
-  z-index: -1;
 }
 
 
@@ -63,6 +62,13 @@ blockquote{
   text-align: center;
 }
 
+  blockquote p,a{
+    background: black;
+  }
+
+table {
+  background: black;
+}
 
  h2 {
   font-size: 1.9em;
@@ -85,9 +91,10 @@ h3 {
 
 .info {
   display: flex;
-  justify-content: space-between;
-  padding: 4em;
-  padding-bottom: 7em;
+  justify-content: center;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  margin-left: 5em;
 }
 
 table {
@@ -127,7 +134,8 @@ th {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
- 
+ background: black;
+ border: 5px dashed green;
   
 }
 
@@ -165,7 +173,7 @@ figure h3 {
 
 figure:hover {
   height: 577px;
- 
+ transition: 2s;
 }
 
 figure:hover h3 {
@@ -244,16 +252,33 @@ aside li{
     and (min-width: 0) 
     and (max-width: 48em)  { 
 
+
+      .info {
+        display: inline-block;
+        width: 80%;
+
+        margin-right: -150px;
+        margin-top: 3em;
+        margin-bottom: 3em;
+      }
+
+    .info-title {
+      align-content: center;
+    }
     
-      .info,.cast {
-        display: block;
-        align-content: center;
-        justify-content: space-around;
+
+      
+       blockquote p {
+        margin-left: 2em;
+        max-width: 80%;
       }
       
-      .cast {
-        margin-left: -30px;
-      }
+     #content {
+       max-width: 100%;
+       justify-content: space-around;
+       align-content: center;
+       min-height: 100%;
+     }
       /* Diagnostic Styling. Delete When Done. */
       /* body:before {
            background: yellow;
@@ -262,14 +287,15 @@ aside li{
       header b {
           display: none;
       }
-      blockquote {
-        display: block;
-        max-width: 70%;
+     
         
       }
       .bq-title {
         font-size: 1.4em;
+        justify-content: space-around;
       }
+
+
       figure:focus {
         height: 577px;
       }
@@ -300,7 +326,7 @@ aside li{
       aside li{
         list-style: none;
       }
-  }
+  
   
   /* Tablet:  
     * 768px = 48em 
@@ -323,9 +349,7 @@ aside li{
     header b {
       display: none;
   }
-    
-  
-      figure:focus {
+    figure:focus {
         height: 577px;
       
       }
@@ -373,6 +397,10 @@ aside li{
          background: yellow;
          content: "Desktop Size";
     } */
+    .info {
+      width: 80%;
+
+    }
   
   }
   
