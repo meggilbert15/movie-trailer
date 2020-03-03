@@ -18,11 +18,6 @@
 }
 
 
-.form {
-  background: black;
-  justify-content: space-around;
-  align-content: center;
-}
 header {
   margin-bottom: 3em;
 }
@@ -73,7 +68,7 @@ blockquote{
 }
 
   blockquote p,a{
-    background: black;
+    background: rgba(0, 0, 0, 0.233);
   }
 
 table {
