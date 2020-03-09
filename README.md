@@ -3,7 +3,7 @@
 ## Description
 
 
-When a desperate UHF Channel 62 station gives the seriously odd George the job of manager, he and his best friend Bob prove to be programming geniuses, turning the station around -- and attracting the attention of an unscrupulous competitor. This comedy focuses most of its creative attention on numerous bizarre television parodies featured throughout/.
+When a desperate UHF Channel 62 station gives the seriously odd George the job of manager, he and his best friend Bob prove to be programming geniuses, turning the station around -- and attracting the attention of an unscrupulous competitor. This comedy focuses most of its creative attention on numerous bizarre television parodies featured throughout.
 
 ## Revisions
 
