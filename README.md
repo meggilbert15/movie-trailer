@@ -12,5 +12,5 @@ I made the background more dynamic by adding movement and more colors. This impr
 
 * [Plyr library](plyr.io/)
 * [Google Fonts](https://fonts.google.com/)
-* [A CodePen Pen](URL_TO_PEN)
-* [ANOTHER_SOURCE]()
+* [Giphy] (https://giphy.com/)
+* [UHF IMDB](https://www.imdb.com/title/tt0098546/)
